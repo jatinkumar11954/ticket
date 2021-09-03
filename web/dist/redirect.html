@@ -1,0 +1,27 @@
+<head>
+    <title>Redirecting please wait </title>
+</head>
+<script>
+    var search = location.search;
+    search = search.substring(1);
+    //     window.localStorage.setItem("flutter.survey", "public");
+    //     window.localStorage.setItem("flutter.survey_id", search.split("=")[1]);  
+    var searchParams = new URLSearchParams(search);
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            // document.getElementById("demo").innerHTML = this.responseText;
+            var response = JSON.parse(this.responseText);
+             window.localStorage.setItem('happiTicketToken', response.data.token);
+            delete response.data.token;
+            delete response.data.notificattionToken;
+             window.localStorage.setItem("loginType","Mobile");
+             window.localStorage.setItem('userData', JSON.stringify(response.data));
+          // this.baseService.update();
+        //   this.router.navigate(['/']);
+         location.replace("/");
+        }
+    };
+    xhttp.open("GET", "https://ticket.happimobiles.com/userlog/getTokenDetails/"+searchParams.get("id"), true);
+    xhttp.send();
+</script>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "535603898793",
+    "project_id": "happiticket-8c7eb",
+    "storage_bucket": "happiticket-8c7eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535603898793:android:10f4ce004ce7e803c33cb8",
+        "android_client_info": {
+          "package_name": "com.happi.tickets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535603898793-uodic59ku19ep3r0j3v43c966877lon2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happi.tickets",
+            "certificate_hash": "9f61439aeef80f911e067996866d43e0d098d088"
+          }
+        },
+        {
+          "client_id": "535603898793-3g20ab7etn5fm7ja9c9ielej2641r55b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASN9Ktu_AOZmg2IhdjjgsaCmq0QhzJ0Gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535603898793-3g20ab7etn5fm7ja9c9ielej2641r55b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
